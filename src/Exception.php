@@ -3,9 +3,9 @@
 namespace kdn\attemptsCounter;
 
 /**
- * Class AttemptsLimitException.
+ * Class Exception.
  * @package kdn\attemptsCounter
  */
-class AttemptsLimitException extends Exception
+class Exception extends \Exception
 {
 }

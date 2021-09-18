@@ -1,0 +1,14 @@
+build:
+  nodes:
+    analysis:
+      tests:
+        override:
+          - php-scrutinizer-run
+
+filter:
+  dependency_paths:
+    - vendor/
+
+tools:
+  external_code_coverage: true
+  # timeout: 300 # default timeout in seconds

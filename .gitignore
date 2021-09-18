@@ -1,3 +1,15 @@
 /.idea
+/.phpunit.result.cache
+
+# authentication credentials for Composer
+/auth.json
+
+/coverage
+
+# Composer cache
+/docker/composer/cache
+
+/phpunit.xml
+/phpunit.xml.backup
 /TODO.txt
 /vendor

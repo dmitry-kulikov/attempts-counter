@@ -8,7 +8,7 @@
 
 | Q                | A
 |------------------|---
-| Package version  | 
-| PHP version      | 
-| HHVM version     | 
-| Operating system | 
+| Package version  |
+| PHP version      |
+| HHVM version     |
+| Operating system |

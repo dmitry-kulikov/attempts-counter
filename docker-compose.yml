@@ -1,0 +1,54 @@
+version: '3.8'
+
+x-build: &build
+  context: .
+
+x-defaults: &defaults
+  restart: unless-stopped
+  tty: true
+
+x-volume-composer-cache: &volume-composer-cache ./docker/composer/cache:/root/.composer/cache
+x-volume-source: &volume-source .:/usr/src/attempts-counter
+x-volume-xdebug-3-config: &volume-xdebug-3-config ./docker/php/conf.d/xdebug-3.ini:/usr/local/etc/php/conf.d/xdebug.ini
+
+services:
+  '5.6':
+    <<: *defaults
+    build:
+      <<: *build
+      args:
+        PHP_VERSION: '5.6-cli'
+    image: attempts-counter-5.6
+    volumes:
+      - *volume-composer-cache
+      - *volume-source
+      - vendor-5.6:/usr/src/attempts-counter/vendor
+  '7.4':
+    <<: *defaults
+    build:
+      <<: *build
+      args:
+        PHP_VERSION: '7.4-cli'
+    image: attempts-counter-7.4
+    volumes:
+      - *volume-composer-cache
+      - *volume-source
+      - *volume-xdebug-3-config
+      - vendor-7.4:/usr/src/attempts-counter/vendor
+  '8.0':
+    <<: *defaults
+    build:
+      <<: *build
+      args:
+        PHP_VERSION: '8.0-cli'
+    image: attempts-counter-8.0
+    volumes:
+      - *volume-composer-cache
+      - *volume-source
+      - *volume-xdebug-3-config
+      - vendor-8.0:/usr/src/attempts-counter/vendor
+
+volumes:
+  vendor-5.6:
+  vendor-7.4:
+  vendor-8.0:
