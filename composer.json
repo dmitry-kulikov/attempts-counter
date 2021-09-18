@@ -1,0 +1,25 @@
+{
+    "name": "kdn/attempts-counter",
+    "description": "An abstract counter of attempts to perform some actions.",
+    "keywords": [
+        "attempts",
+        "counter"
+    ],
+    "homepage": "https://github.com/dmitry-kulikov/attempts-counter",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dmitry Kulikov",
+            "email": "kulikovdn@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "kdn\\attemptsCounter\\": "src/"
+        }
+    }
+}
