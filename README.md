@@ -8,29 +8,29 @@ An abstract PHP counter of attempts to perform some actions.
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/dmitry-kulikov/attempts-counter/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/dmitry-kulikov/attempts-counter/?branch=master)
 [![Code Climate](https://codeclimate.com/github/dmitry-kulikov/attempts-counter/badges/gpa.svg)](https://codeclimate.com/github/dmitry-kulikov/attempts-counter)
 
-# Requirements
+## Requirements
 
 - PHP 5.4 or later or HHVM 3.
 
-# Installation
+## Installation
 
 The preferred way to install this package is through [Composer](https://getcomposer.org).
 
 To install, either run
 
-```
+```sh
 php composer.phar require kdn/attempts-counter "*"
 ```
 
 or add
 
-```
+```text
 "kdn/attempts-counter": "*"
 ```
 
 to the `require` section of your `composer.json` file.
 
-# Usage
+## Usage
 
 Repeat the retrieving of URL content in case of network problems:
 
@@ -85,7 +85,7 @@ For further details, please see the documentation for the public methods in the
 and
 [AttemptsCounter](https://github.com/dmitry-kulikov/attempts-counter/blob/master/src/AttemptsCounter.php) classes.
 
-# Testing
+## Testing
 
 Make sure you installed all Composer dependencies (run `composer update` in the base directory of repository).
 Run PHPUnit in the base directory of repository:
@@ -94,7 +94,7 @@ Run PHPUnit in the base directory of repository:
 ./vendor/bin/phpunit
 ```
 
-## Testing using Docker
+### Testing using Docker
 
 #### Requirements
 
