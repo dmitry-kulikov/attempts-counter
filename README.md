@@ -163,3 +163,13 @@ Run PHPUnit in the base directory of repository:
    ```sh
    docker-compose down --volumes
    ```
+
+## Backward compatibility promise
+
+attempts-counter is using [Semver](https://semver.org). This means that versions are tagged
+with MAJOR.MINOR.PATCH. Only a new major version will be allowed to break backward
+compatibility (BC).
+
+PHP 8 introduced [named arguments](https://wiki.php.net/rfc/named_params), which
+increased the cost and reduces flexibility for package maintainers. The names of the
+arguments for methods in attempts-counter is not included in our BC promise.
