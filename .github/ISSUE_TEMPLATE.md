@@ -6,9 +6,9 @@
 
 ### Additional info
 
-| Q                | A
-|------------------|---
-| Package version  |
-| PHP version      |
-| HHVM version     |
-| Operating system |
+| Q                | A   |
+|------------------|-----|
+| Package version  |     |
+| PHP version      |     |
+| HHVM version     |     |
+| Operating system |     |
